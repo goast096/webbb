@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>0304網頁設計</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-size: 16px;
+            overflow: hidden;
+            padding: 0;
+            display: flex;
+        }
+
+        #container {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        #main {
+            display: flex;
+            width: 100vw;
+            height: 85vh;
+            background: linear-gradient(180deg, rgba(36, 64, 62, 1) 75%, rgba(0,205,63,0.6) 160%);
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo {
+            padding-left: 30px;
+            height: 20vh;
+            position: absolute;
+        }
+
+        .dashboard {
+            position: relative;
+            font-size: 2.5em;
+            height: 85vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .wave-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: auto;
+        }
+
+        .wave-container img {
+            width: 140px;
+            height: 250px;
+            margin: 0 ;
+        }
+
+        .wave-container {
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+            align-items: flex-end;
+            /*overflow: hidden;*/
+            height: 60%;
+        }
+
+        .wave-container img {
+            width: 140px;
+            height: auto;
+            overflow: hidden;
+        }
+
+        #footer {
+            height: 15vh;
+            width: 100vw;
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(163,156,150,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="main">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="dashboard">
+            <p style="position:relative;height:20%;top: 40px">網頁故障，工程師正在搶修中</p>
+            <p style="height:20%;display: flex; justify-content: center">
+                <img src="images/earphone.png" style="height: 140px;">
+            </p>
+            <div class="wave-container">
+                <img src="images/wave.png" style="height:370px;margin-right: 20px;">
+                <img src="images/wave.png" style="height:300px;margin-right: 15px;">
+                <img src="images/wave.png" style="height:270px;margin-right: 10px;">
+                <img src="images/wave.png" style="height:300px;margin-right: 20px;">
+                <img src="images/wave.png" style="height:250px;margin-right: 15px;">
+                <img src="images/wave.png" style="height:320px;margin-right: 30px;">
+                <img src="images/wave.png" style="height:400px;margin-right: 15px;">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <i class="fa-solid fa-phone-volume">&nbsp;&nbsp;&nbsp;如有緊急聯絡需求，請撥打 &nbsp;(+82)23453496</i>
+    </div>
+</div>
+</body>
+</html>
